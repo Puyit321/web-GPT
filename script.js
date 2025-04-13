@@ -12,7 +12,7 @@ async function sendMessage() {
 
     // Send user message to the API
     try {
-        const response = await fetch(`https://nash-rest-api.vercel.app/gpt4o?prompt=${encodeURIComponent(userMessage)}`);
+        const response = await fetch(`https://kaiz-apis.gleeze.com/api/gpt-4o?ask=${encodeURIComponent(userMessage)}&uid=`);
         const data = await response.json();
 
         // Display AI response
