@@ -12,7 +12,7 @@ async function sendMessage() {
 
     // Send user message to the API
     try {
-        const response = await fetch(`https://kaiz-apis.gleeze.com/api/gpt-4o?ask=${encodeURIComponent(userMessage)}&uid=`);
+        const response = await fetch(`https://kaiz-apis.gleeze.com/api/gpt-4o?ask=${encodeURIComponent(userMessage)}&uid=1`);
         const data = await response.json();
 
         // Display AI response
